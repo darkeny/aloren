@@ -1,17 +1,16 @@
 import { deleteUserArgs, findUsersQuery, saveUserArgs, updateUserArgs, User, userRepository } from "./types";
 
-export class UserRepo implements userRepository {
-    async save(params: saveUserArgs): Promise<User> {
-        throw new Error("");
-
-    }
-    async delete(params: deleteUserArgs): Promise<User> {
+export class userRepo implements userRepository{
+    save(params: saveUserArgs): Promise<User> {
         throw new Error("Method not implemented.");
     }
-    async update(params: updateUserArgs): Promise<User> {
+    delete(params: deleteUserArgs): Promise<User> {
         throw new Error("Method not implemented.");
     }
-    async find(query: findUsersQuery): Promise<User> {
+    update(params: updateUserArgs): Promise<User> {
+        throw new Error("Method not implemented.");
+    }
+    find(query: findUsersQuery): Promise<User> {
         throw new Error("Method not implemented.");
     }
 
